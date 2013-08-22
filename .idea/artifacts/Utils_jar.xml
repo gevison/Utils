@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="Utils:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Utils_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Utils.jar">
+        <element id="module-output" name="Utils" />
+      </element>
+      <element id="library" level="project" name="log4j" />
+      <element id="library" level="project" name="commons-logging" />
+      <element id="library" level="project" name="commons-io-2.4" />
+      <element id="library" level="project" name="spring" />
+      <element id="library" level="project" name="commons-lang3-3.1" />
+      <element id="library" level="project" name="jdom-2.0.4" />
+      <element id="library" level="project" name="jide" />
+    </root>
+  </artifact>
+</component>
