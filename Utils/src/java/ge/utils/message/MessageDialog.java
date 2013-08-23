@@ -9,7 +9,8 @@ import ge.utils.bundle.Resources;
 import ge.utils.message.enums.MessageLevel;
 import ge.utils.message.enums.MessageResult;
 import ge.utils.message.enums.MessageType;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.swing.BorderFactory;
 import javax.swing.Icon;
@@ -33,7 +34,7 @@ import java.util.Map;
 public class MessageDialog extends StandardDialog implements ActionListener,
                                                              WindowListener
 {
-    private static final Logger logger = Logger.getLogger( MessageDialog.class );
+    private static final Logger logger = LogManager.getLogger( MessageDialog.class );
 
     private static final Resources resources =
             Resources.getInstance( "ge.utils.resources" );

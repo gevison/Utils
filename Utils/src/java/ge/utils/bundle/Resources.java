@@ -1,7 +1,8 @@
 package ge.utils.bundle;
 
 import ge.utils.ico.Ico;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -20,7 +21,7 @@ import java.util.ResourceBundle;
 
 public class Resources
 {
-    private static Logger logger = Logger.getLogger( Resources.class );
+    private static Logger logger = LogManager.getLogger( Resources.class );
 
     private String resourceName;
 

@@ -1,6 +1,7 @@
 package ge.utils.loader;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
@@ -17,7 +18,7 @@ import java.net.URLClassLoader;
  */
 public class DynamicLoader
 {
-    private static Logger logger = Logger.getLogger( DynamicLoader.class );
+    private static Logger logger = LogManager.getLogger( DynamicLoader.class );
 
     public static void addJar( File file )
     {

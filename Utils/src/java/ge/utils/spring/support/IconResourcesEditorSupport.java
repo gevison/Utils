@@ -1,7 +1,8 @@
 package ge.utils.spring.support;
 
 import ge.utils.ico.Ico;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -17,7 +18,7 @@ import java.util.Map;
 
 public class IconResourcesEditorSupport extends PropertyEditorSupport
 {
-    private static Logger logger = Logger.getLogger( IconResourcesEditorSupport.class );
+    private static Logger logger = LogManager.getLogger( IconResourcesEditorSupport.class );
 
     private static Map<String, Icon> cache = new HashMap<String, Icon>();
 

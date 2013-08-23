@@ -1,19 +1,20 @@
 Manifest-Version: 1.0
-Class-Path: log4j.jar commons-logging.jar commons-logging-api.jar comm
- ons-logging-adapters.jar commons-io-2.4.jar spring-core-3.2.2.RELEASE
- .jar spring-beans-3.2.2.RELEASE.jar spring-aop-3.2.2.RELEASE.jar spri
- ng-aspects-3.2.2.RELEASE.jar spring-context-3.2.2.RELEASE.jar spring-
- context-support-3.2.2.RELEASE.jar spring-expression-3.2.2.RELEASE.jar
-  spring-instrument-3.2.2.RELEASE.jar spring-instrument-tomcat-3.2.2.R
- ELEASE.jar spring-jdbc-3.2.2.RELEASE.jar spring-jms-3.2.2.RELEASE.jar
-  spring-orm-3.2.2.RELEASE.jar spring-oxm-3.2.2.RELEASE.jar spring-str
- uts-3.2.2.RELEASE.jar spring-test-3.2.2.RELEASE.jar spring-tx-3.2.2.R
- ELEASE.jar spring-web-3.2.2.RELEASE.jar spring-webmvc-3.2.2.RELEASE.j
- ar spring-webmvc-portlet-3.2.2.RELEASE.jar tools.jar commons-lang3-3.
- 1.jar jdom-2.0.4.jar jaxen-1.1.4.jar xercesImpl.jar xml-apis.jar jide
- -common.jar jide-action.jar jide-beaninfo.jar jide-charts.jar jide-co
- mponents.jar jide-dashboard.jar jide-data.jar jide-designer.jar jide-
- dialogs.jar jide-diff.jar jide-dock.jar jide-editor.jar jide-gantt.ja
- r jide-grids.jar jide-pivot.jar jide-plaf-jdk7.jar jide-plaf.jar jide
- -rss.jar jide-shortcut.jar jide-treemap.jar
+Class-Path: log4j-api-2.0-beta8.jar log4j-core-2.0-beta8.jar commons-l
+ ogging.jar commons-logging-api.jar commons-logging-adapters.jar commo
+ ns-io-2.4.jar spring-core-3.2.2.RELEASE.jar spring-beans-3.2.2.RELEAS
+ E.jar spring-aop-3.2.2.RELEASE.jar spring-aspects-3.2.2.RELEASE.jar s
+ pring-context-3.2.2.RELEASE.jar spring-context-support-3.2.2.RELEASE.
+ jar spring-expression-3.2.2.RELEASE.jar spring-instrument-3.2.2.RELEA
+ SE.jar spring-instrument-tomcat-3.2.2.RELEASE.jar spring-jdbc-3.2.2.R
+ ELEASE.jar spring-jms-3.2.2.RELEASE.jar spring-orm-3.2.2.RELEASE.jar 
+ spring-oxm-3.2.2.RELEASE.jar spring-struts-3.2.2.RELEASE.jar spring-t
+ est-3.2.2.RELEASE.jar spring-tx-3.2.2.RELEASE.jar spring-web-3.2.2.RE
+ LEASE.jar spring-webmvc-3.2.2.RELEASE.jar spring-webmvc-portlet-3.2.2
+ .RELEASE.jar tools.jar commons-lang3-3.1.jar jdom-2.0.4.jar jaxen-1.1
+ .4.jar xercesImpl.jar xml-apis.jar jide-common.jar jide-action.jar ji
+ de-beaninfo.jar jide-charts.jar jide-components.jar jide-dashboard.ja
+ r jide-data.jar jide-designer.jar jide-dialogs.jar jide-diff.jar jide
+ -dock.jar jide-editor.jar jide-gantt.jar jide-grids.jar jide-pivot.ja
+ r jide-plaf-jdk7.jar jide-plaf.jar jide-rss.jar jide-shortcut.jar jid
+ e-treemap.jar
 

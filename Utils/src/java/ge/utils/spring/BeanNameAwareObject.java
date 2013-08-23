@@ -10,8 +10,8 @@ import javax.xml.bind.annotation.XmlAttribute;
 
 import static org.springframework.util.StringUtils.hasLength;
 
-@XmlAccessorType( XmlAccessType.FIELD )
-@XmlAccessorOrder( XmlAccessOrder.ALPHABETICAL )
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlAccessorOrder(XmlAccessOrder.ALPHABETICAL)
 public abstract class BeanNameAwareObject extends BeanObject implements BeanNameAware
 {
     @XmlAttribute

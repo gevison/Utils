@@ -1,6 +1,7 @@
 package ge.utils.xml.w3c;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.xerces.dom.CDATASectionImpl;
 import org.apache.xerces.dom.CoreDocumentImpl;
 import org.apache.xerces.dom.ElementImpl;
@@ -25,7 +26,7 @@ import java.util.List;
  */
 public class XmlHelper
 {
-    private static Logger logger = Logger.getLogger( XmlHelper.class );
+    private static Logger logger = LogManager.getLogger( XmlHelper.class );
 
     public static Content nodeToContent( org.w3c.dom.Node node )
     {

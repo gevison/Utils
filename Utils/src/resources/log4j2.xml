@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration packages="ge.utils.log">
+    <appenders>
+        <LoggerAppender name="LoggerAppender"/>
+        <Console name="Console">
+            <PatternLayout pattern="%d{ISO8601} [%t] [%p] [%c.%M(%L)] - %m%n"/>
+        </Console>
+        <FastRollingFile name="File" fileName="sys.log" filePattern="sys.log%i">
+            <PatternLayout pattern="%d{ISO8601} [%t] [%p] [%c.%M(%L)] - %m%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="1MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="5"/>
+        </FastRollingFile>
+    </appenders>
+    <loggers>
+        <root level="all">
+            <appender-ref ref="Console"/>
+            <appender-ref ref="LoggerAppender"/>
+            <appender-ref ref="File"/>
+        </root>
+    </loggers>
+</configuration>
