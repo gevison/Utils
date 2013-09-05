@@ -16,5 +16,9 @@ public class Test
         Logger logger = LogManager.getLogger( Test.class );
 
         logger.debug( "Test" );
+
+        org.apache.log4j.Logger logger1 = org.apache.log4j.LogManager.getLogger( Test.class );
+
+        logger1.debug( "Test 1" );
     }
 }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <configuration packages="ge.utils.log">
     <appenders>
-        <LoggerAppender name="LoggerAppender"/>
+        <LoggerAppender2 name="LoggerAppender2"/>
         <Console name="Console">
             <PatternLayout pattern="%d{ISO8601} [%t] [%p] [%c.%M(%L)] - %m%n"/>
         </Console>
-        <FastRollingFile name="File" fileName="sys.log" filePattern="sys.log%i">
+        <FastRollingFile name="File" fileName="sys2.log" filePattern="sys2.log%i">
             <PatternLayout pattern="%d{ISO8601} [%t] [%p] [%c.%M(%L)] - %m%n"/>
             <Policies>
                 <SizeBasedTriggeringPolicy size="1MB"/>
@@ -16,7 +16,7 @@
     <loggers>
         <root level="all">
             <appender-ref ref="Console"/>
-            <appender-ref ref="LoggerAppender"/>
+            <appender-ref ref="LoggerAppender2"/>
             <appender-ref ref="File"/>
         </root>
     </loggers>
