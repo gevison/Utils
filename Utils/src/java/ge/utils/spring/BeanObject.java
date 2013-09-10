@@ -1,7 +1,6 @@
 package ge.utils.spring;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import ge.utils.log.LoggerEx;
 import org.springframework.beans.factory.InitializingBean;
 
 import javax.xml.bind.annotation.XmlAccessOrder;
@@ -15,13 +14,11 @@ import static org.springframework.util.Assert.state;
 @XmlAccessorOrder(XmlAccessOrder.ALPHABETICAL)
 public abstract class BeanObject implements InitializingBean
 {
-    private static final Logger logger = LogManager.getLogger( BeanObject.class );
-
     private transient boolean initialised = false;
 
     protected BeanObject()
     {
-        logger.trace( "Created bean object." );
+        LoggerEx.trace( "Created bean object." );
     }
 
     public final void afterPropertiesSet() throws

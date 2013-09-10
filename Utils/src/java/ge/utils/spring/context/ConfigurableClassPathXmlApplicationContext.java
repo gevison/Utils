@@ -61,4 +61,12 @@ public abstract class ConfigurableClassPathXmlApplicationContext extends Generic
     }
 
     public abstract Map<Class<?>, Class<? extends PropertyEditor>> createCustomEditors();
+
+    @Override
+    public String toString()
+    {
+        return "ConfigurableClassPathXmlApplicationContext{" +
+                "configLocation='" + configLocation + '\'' +
+                '}';
+    }
 }

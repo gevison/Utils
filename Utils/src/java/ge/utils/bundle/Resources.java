@@ -1,8 +1,7 @@
 package ge.utils.bundle;
 
 import ge.utils.ico.Ico;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import ge.utils.log.LoggerEx;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -21,8 +20,6 @@ import java.util.ResourceBundle;
 
 public class Resources
 {
-    private static Logger logger = LogManager.getLogger( Resources.class );
-
     private String resourceName;
 
     private ResourceBundle resourceBundle;
@@ -34,7 +31,7 @@ public class Resources
     {
         if ( resourceName == null )
         {
-            logger.error( "resourceName cannot be null." );
+            LoggerEx.error( "resourceName cannot be null." );
             throw new IllegalArgumentException( "resourceName cannot be null." );
         }
         else
@@ -54,12 +51,12 @@ public class Resources
         }
         catch ( Exception e )
         {
-            logger.error( "Failed to find resource bundle: " + resourceName + ".resources" );
+            LoggerEx.error( "Failed to find resource bundle: " + resourceName + ".resources" );
         }
 
         if ( resourceBundle == null )
         {
-            logger.error( "Failed to find resource bundle: " + resourceName + ".resources" );
+            LoggerEx.error( "Failed to find resource bundle: " + resourceName + ".resources" );
         }
     }
 
@@ -85,7 +82,7 @@ public class Resources
     {
         if ( ( resourceName == null ) || ( resourceName.length == 0 ) )
         {
-            logger.error( "resourceName cannot be null or empty." );
+            LoggerEx.error( "resourceName cannot be null or empty." );
             throw new IllegalArgumentException( "resourceName cannot be null or empty." );
         }
 
@@ -111,7 +108,7 @@ public class Resources
             }
             catch ( Exception ignored )
             {
-                logger.trace( "Failed to find resource: " + resource );
+                LoggerEx.trace( "Failed to find resource: " + resource );
             }
         }
 
@@ -231,7 +228,7 @@ public class Resources
 
                     if ( url == null )
                     {
-                        logger.trace( "Failed to load resource file: " + fileName );
+                        LoggerEx.trace( "Failed to load resource file: " + fileName );
                         return null;
                     }
                 }
@@ -260,7 +257,7 @@ public class Resources
         }
         catch ( IOException e )
         {
-            logger.trace( "Failed to load resource file: " + fileName );
+            LoggerEx.trace( "Failed to load resource file: " + fileName );
         }
         finally
         {

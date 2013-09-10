@@ -1,7 +1,6 @@
 package ge.utils.xml.w3c;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import ge.utils.log.LoggerEx;
 import org.apache.xerces.dom.CDATASectionImpl;
 import org.apache.xerces.dom.CoreDocumentImpl;
 import org.apache.xerces.dom.ElementImpl;
@@ -26,8 +25,6 @@ import java.util.List;
  */
 public class XmlHelper
 {
-    private static Logger logger = LogManager.getLogger( XmlHelper.class );
-
     public static Content nodeToContent( org.w3c.dom.Node node )
     {
         Content retVal = null;
@@ -42,7 +39,7 @@ public class XmlHelper
         }
         else
         {
-            logger.debug( "Failed to convert object to jDom type: " + node.getClass().getSimpleName() );
+            LoggerEx.debug( "Failed to convert object to jDom type: " + node.getClass().getSimpleName() );
         }
 
         return retVal;
@@ -101,7 +98,7 @@ public class XmlHelper
         }
         else
         {
-            logger.debug( "Failed to convert object to w3c type: " + content.getClass().getSimpleName() );
+            LoggerEx.debug( "Failed to convert object to w3c type: " + content.getClass().getSimpleName() );
         }
 
         return retVal;

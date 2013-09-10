@@ -6,11 +6,10 @@ import com.jidesoft.swing.PartialLineBorder;
 import com.jidesoft.swing.PartialSide;
 import com.jidesoft.swing.StyledLabel;
 import ge.utils.bundle.Resources;
+import ge.utils.log.LoggerEx;
 import ge.utils.problem.enums.ProblemType;
 import ge.utils.problem.object.Problem;
 import ge.utils.problem.table.ProblemTable;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import javax.swing.BorderFactory;
 import javax.swing.Icon;
@@ -32,8 +31,6 @@ import java.util.List;
 
 public class ProblemDialog extends StandardDialog implements ActionListener
 {
-    private static final Logger logger = LogManager.getLogger( ProblemDialog.class );
-
     private static final Resources resources =
             Resources.getInstance( "ge.utils.resources" );
 
@@ -70,7 +67,7 @@ public class ProblemDialog extends StandardDialog implements ActionListener
     {
         if ( ( problems == null ) || ( problems.isEmpty() == true ) )
         {
-            logger.error( "problems cannot be null or empty." );
+            LoggerEx.error( "problems cannot be null or empty." );
             throw new IllegalArgumentException( "problems cannot be null or empty." );
         }
 

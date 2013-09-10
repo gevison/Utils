@@ -16,6 +16,18 @@ public class LogCompiler
 
     private static List<LogCompilerEvent> eventList = new ArrayList<LogCompilerEvent>();
 
+    private static LogCompilerLevel level = LogCompilerLevel.INFO;
+
+    public static void setLevel( LogCompilerLevel level )
+    {
+        LogCompiler.level = level;
+    }
+
+    public static LogCompilerLevel getLevel()
+    {
+        return level;
+    }
+
     public static void addLoggerListener( LoggerListener loggerListener )
     {
         listenerList.add( LoggerListener.class, loggerListener );
@@ -43,12 +55,15 @@ public class LogCompiler
 
     public static void add( LogCompilerEvent logCompilerEvent )
     {
-        eventList.add( logCompilerEvent );
-
-        LoggerListener[] listeners = getLoggerListeners();
-        for ( LoggerListener listener : listeners )
+        if (( level == null ) || ( level.ordinal() >= logCompilerEvent.getLevel().ordinal() ))
         {
-            listener.newLoggingEvent();
+            eventList.add( logCompilerEvent );
+
+            LoggerListener[] listeners = getLoggerListeners();
+            for ( LoggerListener listener : listeners )
+            {
+                listener.newLoggingEvent();
+            }
         }
     }
 }

@@ -6,11 +6,10 @@ import com.jidesoft.swing.PartialEtchedBorder;
 import com.jidesoft.swing.PartialSide;
 import com.jidesoft.swing.StyledLabel;
 import ge.utils.bundle.Resources;
+import ge.utils.log.LoggerEx;
 import ge.utils.message.enums.MessageLevel;
 import ge.utils.message.enums.MessageResult;
 import ge.utils.message.enums.MessageType;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import javax.swing.BorderFactory;
 import javax.swing.Icon;
@@ -34,8 +33,6 @@ import java.util.Map;
 public class MessageDialog extends StandardDialog implements ActionListener,
                                                              WindowListener
 {
-    private static final Logger logger = LogManager.getLogger( MessageDialog.class );
-
     private static final Resources resources =
             Resources.getInstance( "ge.utils.resources" );
 
@@ -299,7 +296,7 @@ public class MessageDialog extends StandardDialog implements ActionListener,
 
         if ( message == null )
         {
-            logger.error( "message cannot be null." );
+            LoggerEx.error( "message cannot be null." );
             throw new IllegalArgumentException( "message cannot be null." );
         }
 
@@ -559,7 +556,7 @@ public class MessageDialog extends StandardDialog implements ActionListener,
 
         if ( message == null )
         {
-            logger.error( "message cannot be null." );
+            LoggerEx.error( "message cannot be null." );
             throw new IllegalArgumentException( "message cannot be null." );
         }
 
@@ -827,7 +824,7 @@ public class MessageDialog extends StandardDialog implements ActionListener,
 
         if ( message == null )
         {
-            logger.error( "message cannot be null." );
+            LoggerEx.error( "message cannot be null." );
             throw new IllegalArgumentException( "message cannot be null." );
         }
 

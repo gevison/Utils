@@ -1,7 +1,7 @@
 package ge.utils.loader;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+
+import ge.utils.log.LoggerEx;
 
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
@@ -18,8 +18,6 @@ import java.net.URLClassLoader;
  */
 public class DynamicLoader
 {
-    private static Logger logger = LogManager.getLogger( DynamicLoader.class );
-
     public static void addJar( File file )
     {
         try
@@ -37,7 +35,7 @@ public class DynamicLoader
                 }
             }
 
-            logger.debug( "Loading jar: " + file.getPath() );
+            LoggerEx.debug( "Loading jar: " + file.getPath() );
 
             Class systemClass = URLClassLoader.class;
 
@@ -48,22 +46,22 @@ public class DynamicLoader
         }
         catch ( MalformedURLException e )
         {
-            logger.fatal( e.getMessage(), e );
+            LoggerEx.fatal( e.getMessage(), e );
             throw new IllegalStateException( e.getMessage(), e );
         }
         catch ( NoSuchMethodException e )
         {
-            logger.fatal( e.getMessage(), e );
+            LoggerEx.fatal( e.getMessage(), e );
             throw new IllegalStateException( e.getMessage(), e );
         }
         catch ( IllegalAccessException e )
         {
-            logger.fatal( e.getMessage(), e );
+            LoggerEx.fatal( e.getMessage(), e );
             throw new IllegalStateException( e.getMessage(), e );
         }
         catch ( InvocationTargetException e )
         {
-            logger.fatal( e.getMessage(), e );
+            LoggerEx.fatal( e.getMessage(), e );
             throw new IllegalStateException( e.getMessage(), e );
         }
     }

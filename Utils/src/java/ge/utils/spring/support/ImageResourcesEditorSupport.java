@@ -1,8 +1,7 @@
 package ge.utils.spring.support;
 
 import ge.utils.ico.Ico;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import ge.utils.log.LoggerEx;
 
 import java.awt.Image;
 import java.awt.Toolkit;
@@ -16,8 +15,6 @@ import java.util.Map;
 
 public class ImageResourcesEditorSupport extends PropertyEditorSupport
 {
-    private static Logger logger = LogManager.getLogger( ImageResourcesEditorSupport.class );
-
     private static Map<String, Image> cache = new HashMap<String, Image>();
 
     public void setAsText( String text ) throws
@@ -73,7 +70,7 @@ public class ImageResourcesEditorSupport extends PropertyEditorSupport
 
                     if ( url == null )
                     {
-                        logger.trace( "Failed to load resource file: " + fileName );
+                        LoggerEx.trace( "Failed to load resource file: " + fileName );
                         return null;
                     }
                 }
@@ -102,7 +99,7 @@ public class ImageResourcesEditorSupport extends PropertyEditorSupport
         }
         catch ( IOException e )
         {
-            logger.trace( "Failed to load resource file: " + fileName );
+            LoggerEx.trace( "Failed to load resource file: " + fileName );
         }
         finally
         {
