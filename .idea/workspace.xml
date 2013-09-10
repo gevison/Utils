@@ -18,38 +18,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/Utils/test/java/ge/Test.java" line="9" class="ge.Test" package="ge">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/Utils/test/java/ge/Test.java" line="19" class="ge.Test" package="ge">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -86,6 +54,38 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/Utils/test/java/ge/Test.java" line="9" class="ge.Test" package="ge">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/Utils/test/java/ge/Test.java" line="19" class="ge.Test" package="ge">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -95,53 +95,7 @@
     <favorites_list name="Utils" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="log4j2.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/src/resources/log4j2.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="25" selection-start="601" selection-end="616" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="476">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoggerAppender2.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/src/java/ge/utils/log/LoggerAppender2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="48" selection-start="907" selection-end="921" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="1564">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/test/java/ge/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogCompiler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/src/java/ge/utils/log/LogCompiler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1020">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoggerAppender1.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Utils/src/java/ge/utils/log/LoggerAppender1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="560" selection-end="560" vertical-scroll-proportion="-0.2555686" vertical-offset="405" max-vertical-offset="1258">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -369,15 +323,15 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1036" extended-state="0" />
+    <frame x="-8" y="-8" width="1696" height="1036" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1878825" sideWeight="0.21160409" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1878825" sideWeight="0.78725827" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1878825" sideWeight="0.2122588" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1878825" sideWeight="0.7877412" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3629124" sideWeight="0.81395346" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -406,11 +360,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Utils/src/resources/log4j.xml">
+    <entry file="file://$PROJECT_DIR$/Utils/src/java/ge/utils/log/LoggerAppender1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="31" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.6181818" vertical-offset="0" max-vertical-offset="605">
+        <state line="17" column="0" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1258">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/src/resources/log4j.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="31" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.6181818" vertical-offset="0" max-vertical-offset="605" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/apache-log4j/log4j-1.2.17.jar!/org/apache/log4j/Priority.class">
@@ -425,9 +384,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/src/java/ge/utils/log/LogCompilerLevel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="41" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <folding />
-        </state>
+        <state line="10" column="41" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/apache-log4j/log4j-api-2.0-beta8.jar!/org/apache/logging/log4j/Level.class">
@@ -449,60 +406,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/src/resources/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="25" selection-start="601" selection-end="616" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/src/java/ge/utils/log/LoggerAppender2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="48" selection-start="907" selection-end="921" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utils/src/java/ge/utils/log/LogCompiler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.0" vertical-offset="401" max-vertical-offset="935">
+        <state line="45" column="0" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.0" vertical-offset="401" max-vertical-offset="935" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/apache-log4j/log4j-core-2.0-beta8.jar!/org/apache/logging/log4j/core/appender/RollingFileAppender.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="19" selection-start="327" selection-end="327" vertical-scroll-proportion="0.12515338" vertical-offset="0" max-vertical-offset="815" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/apache-log4j/log4j-core-2.0-beta8.jar!/org/apache/logging/log4j/core/appender/FastRollingFileAppender.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="141" selection-start="453" selection-end="453" vertical-scroll-proportion="0.14601228" vertical-offset="0" max-vertical-offset="815" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/apache-log4j/log4j-core-2.0-beta8.jar!/org/apache/logging/log4j/core/appender/AbstractOutputStreamAppender.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="22" selection-start="190" selection-end="190" vertical-scroll-proportion="0.12515338" vertical-offset="0" max-vertical-offset="815" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/src/java/ge/utils/log/LoggerAppender1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="560" selection-end="560" vertical-scroll-proportion="0.21820304" vertical-offset="0" max-vertical-offset="1258">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/test/java/ge/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+        <state line="19" column="0" selection-start="353" selection-end="353" vertical-scroll-proportion="0.2578763" vertical-offset="0" max-vertical-offset="857">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/apache-log4j/log4j-core-2.0-beta8.jar!/org/apache/logging/log4j/core/appender/RollingFileAppender.class">
+    <entry file="file://$PROJECT_DIR$/Utils/src/java/ge/utils/log/LoggerAppender2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="19" selection-start="327" selection-end="327" vertical-scroll-proportion="0.12515338" vertical-offset="0" max-vertical-offset="815">
-          <folding />
-        </state>
+        <state line="25" column="48" selection-start="907" selection-end="921" vertical-scroll-proportion="-0.21820304" vertical-offset="425" max-vertical-offset="1377" />
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/apache-log4j/log4j-core-2.0-beta8.jar!/org/apache/logging/log4j/core/appender/FastRollingFileAppender.class">
+    <entry file="file://$PROJECT_DIR$/Utils/src/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="141" selection-start="453" selection-end="453" vertical-scroll-proportion="0.14601228" vertical-offset="0" max-vertical-offset="815">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/apache-log4j/log4j-core-2.0-beta8.jar!/org/apache/logging/log4j/core/appender/AbstractOutputStreamAppender.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="190" selection-end="190" vertical-scroll-proportion="0.12515338" vertical-offset="0" max-vertical-offset="815">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/src/java/ge/utils/log/LoggerAppender1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="560" selection-end="560" vertical-scroll-proportion="-0.2555686" vertical-offset="405" max-vertical-offset="1258">
-          <folding />
-        </state>
+        <state line="13" column="25" selection-start="601" selection-end="616" vertical-scroll-proportion="0.2578763" vertical-offset="0" max-vertical-offset="857" />
       </provider>
     </entry>
   </component>
