@@ -1,5 +1,7 @@
 package ge.utils.ico;
 
+import ge.utils.log.LoggerEx;
+
 import javax.imageio.ImageIO;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
@@ -25,7 +27,7 @@ public class Ico
     {
         if ( icoImage[ 2 ] != 1 || icoImage[ 3 ] != 0 )
         {
-            throw new IllegalArgumentException( "Not an ICO resource" );
+            throw LoggerEx.throwing( new IllegalArgumentException( "Not an ICO resource" ) );
         }
 
         int imageCount = calculateImageCount( icoImage[ 4 ], icoImage[ 5 ] );
@@ -121,12 +123,12 @@ public class Ico
                 }
                 catch ( IOException e )
                 {
-                    throw new IllegalArgumentException( e.getMessage(), e );
+                    throw LoggerEx.throwing( new IllegalArgumentException( e.getMessage(), e ) );
                 }
             }
             else
             {
-                throw new IllegalArgumentException( "BITMAPINFOHEADER or PNG expected" );
+                throw LoggerEx.throwing( new IllegalArgumentException( "BITMAPINFOHEADER or PNG expected" ) );
             }
         }
 

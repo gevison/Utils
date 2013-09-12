@@ -1,5 +1,6 @@
 package ge.utils.log;
 
+import org.apache.commons.lang3.ClassUtils;
 import org.apache.log4j.Level;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -14,32 +15,36 @@ import java.util.Arrays;
  */
 public class LoggerEx
 {
+
+    public static final String RETURNING = "Returning - ";
+
+    public static final String VOID = "void";
+
+    public static final String ENTERING = "Entering - ";
+
+    public static final String NULL = "null";
+
+    public static final String CAUGHT = "Caught - ";
+
+    public static final String THROWING = "Throwing - ";
+
     private static Logger rootLogger = LogManager.getRootLogger();
 
-    public static void log( Level level, Object message )
+    public static void fatal( final Object message )
+    {
+        log( Level.FATAL, message );
+    }
+
+    public static void log( final Level level, final Object message )
     {
         log( level, message, null );
     }
 
-    public static void log( Level level, Object message, Throwable throwable )
+    public static void log( final Level level, final Object message, final Throwable throwable )
     {
         if ( rootLogger.isEnabledFor( level ) == true )
         {
-            Throwable th = new Throwable(  );
-            StackTraceElement[] stackTrace = th.getStackTrace();
-
-            StackTraceElement lastCallPoint = null;
-
-            for ( StackTraceElement stackTraceElement : stackTrace )
-            {
-                String className = stackTraceElement.getClassName();
-
-                if ( className.equals( LoggerEx.class.getName() ) == false )
-                {
-                    lastCallPoint = stackTraceElement;
-                    break;
-                }
-            }
+            StackTraceElement lastCallPoint = getLastCallPoint();
 
             if ( lastCallPoint != null )
             {
@@ -50,159 +55,275 @@ public class LoggerEx
         }
     }
 
-    public static void fatal( Object message )
+    private static StackTraceElement getLastCallPoint()
     {
-        log( Level.FATAL, message );
+        Throwable th = new Throwable();
+        StackTraceElement[] stackTrace = th.getStackTrace();
+
+        StackTraceElement lastCallPoint = null;
+
+        for ( StackTraceElement stackTraceElement : stackTrace )
+        {
+            String className = stackTraceElement.getClassName();
+
+            if ( className.equals( LoggerEx.class.getName() ) == false )
+            {
+                lastCallPoint = stackTraceElement;
+                break;
+            }
+        }
+        return lastCallPoint;
     }
 
-    public static void fatal( Object message,
-                       Throwable t )
+    public static void fatal( final Object message, final Throwable throwable )
     {
-        log( Level.FATAL, message, t );
+        log( Level.FATAL, message, throwable );
     }
 
-    public static void error( Object message )
+    public static void error( final Object message )
     {
         log( Level.ERROR, message );
     }
 
-    public static void error( Object message,
-                              Throwable t )
+    public static void error( final Object message, final Throwable throwable )
     {
-        log( Level.ERROR, message, t );
+        log( Level.ERROR, message, throwable );
     }
 
-    public static void warn( Object message )
+    public static void warn( final Object message )
     {
         log( Level.WARN, message );
     }
 
-    public static void warn( Object message,
-                             Throwable t )
+    public static void warn( final Object message, final Throwable throwable )
     {
-        log( Level.WARN, message, t );
+        log( Level.WARN, message, throwable );
     }
 
-    public static void info( Object message )
+    public static void info( final Object message )
     {
         log( Level.INFO, message );
     }
 
-    public static void info( Object message,
-                             Throwable t )
+    public static void info( final Object message, final Throwable throwable )
     {
-        log( Level.INFO, message, t );
+        log( Level.INFO, message, throwable );
     }
 
-    public static void debug( Object message )
+    public static void debug( final Object message )
     {
         log( Level.DEBUG, message );
     }
 
-    public static void debug( Object message,
-                              Throwable t )
+    public static void debug( final Object message, final Throwable throwable )
     {
-        log( Level.DEBUG, message, t );
+        log( Level.DEBUG, message, throwable );
     }
 
-    public static void trace( Object message )
+    public static void trace( final Object message )
     {
         log( Level.TRACE, message );
     }
 
-    public static void trace( Object message, Throwable t )
+    public static void trace( final Object message, final Throwable throwable )
     {
-        log( Level.TRACE, message, t );
+        log( Level.TRACE, message, throwable );
     }
 
-    public static void entry( final Object... params )
+    public static void entry( final Object... parameters )
     {
-        log( Level.TRACE, entryMsg( params.length, params ) );
+        entry( Level.TRACE, parameters );
     }
 
-    public static void exit()
+    public static void entry( final Level level, final Object... parameters )
     {
-        exit( null );
-    }
-
-    public static <R> R exit( final R result )
-    {
-        log( Level.TRACE, exitMsg( result ) );
-
-        return result;
-    }
-
-    public static <T extends Throwable> T throwing( final T t )
-    {
-        return throwing( Level.ERROR, t );
-    }
-
-    public static <T extends Throwable> T throwing( final Level level, final T t )
-    {
-        log( level, "throwing", t );
-
-        return t;
-    }
-
-    public static void catching( final Throwable t )
-    {
-        catching( Level.ERROR, t );
-    }
-
-    public static void catching( final Level level, final Throwable t )
-    {
-        log( level, "catching", t );
-    }
-
-    private static String entryMsg( final int count, final Object... params )
-    {
-        if ( count == 0 )
+        if ( rootLogger.isEnabledFor( level ) == true )
         {
-            return "entry";
+            log( level, entryMsg( parameters ) );
         }
+    }
 
-        final StringBuilder sb = new StringBuilder( "entry params(" );
-        int i = 0;
-        for ( final Object parm : params )
+    private static String entryMsg( Object... parameters )
+    {
+        StackTraceElement lastCallPoint = getLastCallPoint();
+
+        String message = ENTERING;
+        message += "(";
+
+        if ( ( parameters != null ) && ( parameters.length != 0 ) )
         {
-            if ( parm != null )
+            if ( isEllipsisArgument( lastCallPoint, parameters ) == true )
             {
-                if ( parm.getClass().isArray() == false )
+                parameters = new Object[]{ parameters };
+            }
+
+            String parameterString = "";
+
+            for ( Object parameter : parameters )
+            {
+                if ( parameterString.length() != 0 )
                 {
-                    sb.append( parm.toString() );
+                    parameterString += ",";
+                }
+
+                if ( parameter != null )
+                {
+                    if ( parameter.getClass().isArray() == false )
+                    {
+                        parameterString += parameter.toString();
+                    }
+                    else
+                    {
+                        parameterString += Arrays.toString( ( Object[] ) parameter );
+                    }
                 }
                 else
                 {
-                    sb.append( Arrays.toString( ( Object[] ) parm ) );
+                    parameterString += NULL;
+                }
+            }
+
+            message += parameterString;
+        }
+
+        message += ")";
+
+        return message;
+    }
+
+    private static boolean isEllipsisArgument( StackTraceElement lastCallPoint, Object[] parameters )
+    {
+        try
+        {
+            Class aClass = ClassUtils.getClass( lastCallPoint.getClassName() );
+
+            if ( lastCallPoint.getMethodName().equals( "<init>" ) == true )
+            {
+                try
+                {
+                    aClass.getDeclaredConstructor( parameters.getClass() );
+
+                    return true;
+                }
+                catch ( NoSuchMethodException e )
+                {
+                    // Ignoring
                 }
             }
             else
             {
-                sb.append( "null" );
-            }
+                try
+                {
+                    aClass.getDeclaredMethod( lastCallPoint.getMethodName(), parameters.getClass() );
 
-            if ( ++i < params.length )
-            {
-                sb.append( ", " );
+                    return true;
+                }
+                catch ( NoSuchMethodException e )
+                {
+                    // Ignoring
+                }
             }
         }
-        sb.append( ")" );
-        return sb.toString();
+        catch ( ClassNotFoundException e )
+        {
+            // Ignoring
+        }
+
+        return false;
+    }
+
+    public static void exit()
+    {
+        exit( Level.TRACE );
+    }
+
+    public static void exit( final Level level )
+    {
+        exit( level, Void.TYPE );
+    }
+
+    public static <R> R exit( final R result )
+    {
+        return exit( Level.TRACE, result );
+    }
+
+    public static <R> R exit( final Level level, final R result )
+    {
+        if ( rootLogger.isEnabledFor( level ) == true )
+        {
+            log( level, exitMsg( result ) );
+        }
+
+        return result;
     }
 
     private static String exitMsg( final Object result )
     {
+        String message = RETURNING;
+
         if ( result == null )
         {
-            return "exit";
+            message += NULL;
         }
         else if ( result.getClass().isArray() == true )
         {
-            return "exit with(" + Arrays.toString( ( Object[] ) result ) + ")";
+            message += Arrays.toString( ( Object[] ) result );
         }
         else
         {
-            return "exit with(" + result + ")";
+            message += result;
         }
+
+        return message;
+    }
+
+    public static <T extends Throwable> T throwing( final T thrown )
+    {
+        return throwing( Level.ERROR, thrown );
+    }
+
+    public static <T extends Throwable> T throwing( final Level level, final T thrown )
+    {
+        if ( ( thrown != null ) && ( rootLogger.isEnabledFor( level ) == true ) )
+        {
+            log( level, throwingMessage( thrown ), thrown );
+        }
+
+        return thrown;
+    }
+
+    private static String throwingMessage( Throwable thrown )
+    {
+        String message = THROWING;
+
+        message += thrown.getClass().getName();
+        message += ": ";
+        message += thrown.getMessage();
+
+        return message;
+    }
+
+    public static void catching( final Throwable caught )
+    {
+        catching( Level.ERROR, caught );
+    }
+
+    public static void catching( final Level level, final Throwable caught )
+    {
+        if ( ( caught != null ) && ( rootLogger.isEnabledFor( level ) == true ) )
+        {
+            log( level, catchingMessage( caught ), caught );
+        }
+    }
+
+    private static String catchingMessage( Throwable caught )
+    {
+        String message = CAUGHT;
+
+        message += caught.getClass().getName();
+        message += ": ";
+        message += caught.getMessage();
+
+        return message;
     }
 }

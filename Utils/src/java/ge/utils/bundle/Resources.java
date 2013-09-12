@@ -20,23 +20,23 @@ import java.util.ResourceBundle;
 
 public class Resources
 {
-    private String resourceName;
+    private String resourceBundleName;
 
     private ResourceBundle resourceBundle;
 
     private static Map<String, Resources> bundles =
             new HashMap<String, Resources>();
 
-    private Resources( String resourceName )
+    private Resources( String resourceBundleName )
     {
-        if ( resourceName == null )
+        if ( resourceBundleName == null )
         {
-            LoggerEx.error( "resourceName cannot be null." );
-            throw new IllegalArgumentException( "resourceName cannot be null." );
+            throw LoggerEx.throwing( new IllegalArgumentException( "resourceBundleName cannot be null." ) );
+
         }
         else
         {
-            this.resourceName = resourceName;
+            this.resourceBundleName = resourceBundleName;
             initialise();
         }
     }
@@ -45,18 +45,18 @@ public class Resources
     {
         try
         {
-            String bundleName = resourceName + ".resources";
+            String bundleName = resourceBundleName + ".resources";
             resourceBundle =
                     ResourceBundle.getBundle( bundleName, Locale.getDefault(), ClassLoader.getSystemClassLoader() );
         }
         catch ( Exception e )
         {
-            LoggerEx.error( "Failed to find resource bundle: " + resourceName + ".resources" );
+            LoggerEx.error( "Failed to find resource bundle: " + resourceBundleName + ".resources" );
         }
 
         if ( resourceBundle == null )
         {
-            LoggerEx.error( "Failed to find resource bundle: " + resourceName + ".resources" );
+            LoggerEx.error( "Failed to find resource bundle: " + resourceBundleName + ".resources" );
         }
     }
 
@@ -82,8 +82,7 @@ public class Resources
     {
         if ( ( resourceName == null ) || ( resourceName.length == 0 ) )
         {
-            LoggerEx.error( "resourceName cannot be null or empty." );
-            throw new IllegalArgumentException( "resourceName cannot be null or empty." );
+            throw LoggerEx.throwing( new IllegalArgumentException( "resourceBundleName cannot be null or empty." ) );
         }
 
         String retVal = null;
@@ -108,7 +107,7 @@ public class Resources
             }
             catch ( Exception ignored )
             {
-                LoggerEx.trace( "Failed to find resource: " + resource );
+                LoggerEx.error( "Failed to find resource: " + resource );
             }
         }
 
@@ -215,7 +214,7 @@ public class Resources
             {
                 if ( fileName.charAt( 0 ) != '/' )
                 {
-                    String packagePath = resourceName.replace( '.', '/' );
+                    String packagePath = resourceBundleName.replace( '.', '/' );
 
                     fileName = packagePath + '/' + fileName;
                 }
