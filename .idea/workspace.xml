@@ -18,6 +18,8 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -54,8 +56,6 @@
         <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -126,7 +126,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -137,6 +136,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -226,16 +226,15 @@
     <option name="ACTIVE_ACTIONS" value="ALPHA_COMPARATOR" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1696" height="1036" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30944255" sideWeight="0.81395346" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1878825" sideWeight="0.258248" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1878825" sideWeight="0.2587968" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1878825" sideWeight="0.74061435" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1878825" sideWeight="0.7412032" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32236096" sideWeight="0.81395346" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -246,6 +245,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32690126" sideWeight="0.81395346" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30944255" sideWeight="0.81395346" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -284,12 +284,7 @@
     </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_21/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1596" column="18" selection-start="66079" selection-end="66079" vertical-scroll-proportion="-0.79725087" vertical-offset="12160" max-vertical-offset="29631">
-          <folding>
-            <element signature="docComment;method#getMethod#0;class#Class#0" expanded="false" />
-            <element signature="docComment;method#getDeclaredMethods#0;class#Class#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="1596" column="18" selection-start="66079" selection-end="66079" vertical-scroll-proportion="-0.79725087" vertical-offset="12160" max-vertical-offset="29631" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/src/java/ge/utils/spring/context/ClasspathApplicationContext.java">
@@ -319,9 +314,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/src/resources/log4j.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="48" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.39766082" vertical-offset="0" max-vertical-offset="855">
-          <folding />
-        </state>
+        <state line="20" column="48" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.39766082" vertical-offset="0" max-vertical-offset="855" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/src/java/ge/utils/log/LoggerListener.java">
@@ -336,25 +329,17 @@
     </entry>
     <entry file="file://$USER_HOME$/Downloads/apache-log4j-1.2.17/src/main/java/org/apache/log4j/Priority.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="26" selection-start="3366" selection-end="3382" vertical-scroll-proportion="0.20467836" vertical-offset="1066" max-vertical-offset="2278">
-          <folding />
-        </state>
+        <state line="121" column="26" selection-start="3366" selection-end="3382" vertical-scroll-proportion="0.20467836" vertical-offset="1066" max-vertical-offset="2278" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/src/java/ge/utils/log/LoggerAppender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="36" selection-start="392" selection-end="404" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1241">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="14" column="36" selection-start="392" selection-end="404" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1241" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/src/java/ge/utils/bundle/Resources.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="30" selection-start="2883" selection-end="2883" vertical-scroll-proportion="0.5978898" vertical-offset="1071" max-vertical-offset="4845">
-          <folding />
-        </state>
+        <state line="109" column="30" selection-start="2883" selection-end="2883" vertical-scroll-proportion="0.5978898" vertical-offset="1071" max-vertical-offset="4845" />
       </provider>
     </entry>
   </component>
