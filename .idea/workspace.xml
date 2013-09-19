@@ -10,10 +10,28 @@
     <file path="$PROJECT_DIR$/../ApplicationFramework/Test Single/src/java/ge/framework/test/frame/multi/TestSingleFrameApplicationFrame.java" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379367273301" ignored="false" />
     <file path="$PROJECT_DIR$/../ApplicationFramework/Test Single/src/java/ge/framework/test/frame/multi/SingleTestFrame.java" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379367273301" ignored="false" />
     <file path="$PROJECT_DIR$/../ApplicationFramework/Test Single/src/java/ge/framework/test/frame/multi/SingleTestDocument.java" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379367273301" ignored="false" />
-    <file path="$PROJECT_DIR$/../ApplicationFramework/Application Framework/src/java/ge/framework/application/ApplicationFramework.java" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379368176064" ignored="false" />
-    <file path="/ApplicationFramework.java" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379368139585" ignored="false" />
-    <file path="/application.xml" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379367765172" ignored="false" />
-    <file path="$PROJECT_DIR$/../ApplicationFramework/Test Single/src/resources/application.xml" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379367765703" ignored="false" />
+    <file path="$PROJECT_DIR$/../ApplicationFramework/Application Framework/src/java/ge/framework/application/ApplicationFramework.java" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379406333646" ignored="false" />
+    <file path="/ApplicationFramework.java" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379406324388" ignored="false" />
+    <file path="/application.xml" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379406132320" ignored="false" />
+    <file path="$PROJECT_DIR$/../ApplicationFramework/Test Single/src/resources/application.xml" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379406133482" ignored="false" />
+    <file path="$PROJECT_DIR$/../ApplicationFramework/Test Single/src/java/ge/framework/test/Test.java" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379402684049" ignored="false" />
+    <file path="$PROJECT_DIR$/../ApplicationFramework/Test Single/src/java/ge/framework/test/AppleTest.java" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379403398417" ignored="false" />
+    <file path="/AppleTest.java" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379403043864" ignored="false" />
+    <file path="/fragment.java" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379403704114" ignored="false" />
+    <file path="$PROJECT_DIR$/../ApplicationFramework/Test Single/src/java/ge/framework/test/ApplicationBean.java" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379403056937" ignored="false" />
+    <file path="$PROJECT_DIR$/../ApplicationFramework/Test Single/src/java/appleApplication.xml" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379403507710" ignored="false" />
+    <file path="/appleApplication.xml" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379403491856" ignored="false" />
+    <file path="$PROJECT_DIR$/../ApplicationFramework/Test Single/src/java/ge/framework/test/SingleFrameApplicationBean.java" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379403563785" ignored="false" />
+    <file path="$PROJECT_DIR$/../ApplicationFramework/Application Framework/src/java/ge/framework/application/core/Application.java" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379405447657" ignored="false" />
+    <file path="/Application.java" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379403678034" ignored="false" />
+    <file path="$PROJECT_DIR$/../ApplicationFramework/Application Framework/src/java/ge/framework/application/core/objects/ApplicationBean.java" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379405479768" ignored="false" />
+    <file path="/ApplicationBean.java" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379405348101" ignored="false" />
+    <file path="$PROJECT_DIR$/../ApplicationFramework/Application Framework/src/java/ge/framework/application/multi/objects/MultiFrameApplicationBean.java" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379405979005" ignored="false" />
+    <file path="/MultiFrameApplicationBean.java" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379405968782" ignored="false" />
+    <file path="$PROJECT_DIR$/../ApplicationFramework/Application Framework/src/java/ge/framework/application/single/objects/SingleFrameApplicationBean.java" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379406053570" ignored="false" />
+    <file path="/SingleFrameApplicationBean.java" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379406039781" ignored="false" />
+    <file path="$PROJECT_DIR$/../ApplicationFramework/Test Single/src/resources/ge/framework/test/frame/single/resources.properties" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379406204821" ignored="false" />
+    <file path="/resources.properties" changelist="2d02c432-cb4d-4f8b-bfdc-370a8ac26836" time="1379406204821" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +46,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -65,6 +82,7 @@
         <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -162,12 +180,12 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -239,21 +257,21 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32236096" sideWeight="0.81395346" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3091168" sideWeight="0.81395346" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25121555" sideWeight="0.17948718" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25121555" sideWeight="0.25925925" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25121555" sideWeight="0.511396" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25121555" sideWeight="0.7393162" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32236096" sideWeight="0.81395346" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6095346" sideWeight="0.81395346" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32690126" sideWeight="0.81395346" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3091168" sideWeight="0.81395346" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
