@@ -15,18 +15,15 @@ import java.util.Arrays;
  */
 public class LoggerEx
 {
-
     public static final String RETURNING = "Returning - ";
 
-    public static final String VOID = "void";
-
     public static final String ENTERING = "Entering - ";
-
-    public static final String NULL = "null";
 
     public static final String CAUGHT = "Caught - ";
 
     public static final String THROWING = "Throwing - ";
+
+    public static final String NULL = "null";
 
     private static Logger rootLogger = LogManager.getRootLogger();
 
