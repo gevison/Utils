@@ -18,6 +18,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -55,7 +56,6 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -154,12 +154,12 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -227,7 +227,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -238,9 +238,9 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.250918" sideWeight="0.25938568" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.250918" sideWeight="0.2599319" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.250918" sideWeight="0.7394767" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.250918" sideWeight="0.7400681" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6095346" sideWeight="0.81395346" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -331,35 +331,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/src/java/ge/utils/log/LoggerEx.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="59" selection-start="582" selection-end="582" vertical-scroll-proportion="0.2989449" vertical-offset="0" max-vertical-offset="2465">
-          <folding>
-            <element signature="method#fatal#0;class#LoggerEx#0" expanded="false" />
-            <element signature="method#log#0;class#LoggerEx#0" expanded="false" />
-            <element signature="method#log#1;class#LoggerEx#0" expanded="false" />
-            <element signature="method#getLastCallPoint#0;class#LoggerEx#0" expanded="false" />
-            <element signature="method#fatal#1;class#LoggerEx#0" expanded="false" />
-            <element signature="method#error#0;class#LoggerEx#0" expanded="false" />
-            <element signature="method#error#1;class#LoggerEx#0" expanded="false" />
-            <element signature="method#warn#0;class#LoggerEx#0" expanded="false" />
-            <element signature="method#warn#1;class#LoggerEx#0" expanded="false" />
-            <element signature="method#info#0;class#LoggerEx#0" expanded="false" />
-            <element signature="method#info#1;class#LoggerEx#0" expanded="false" />
-            <element signature="method#debug#0;class#LoggerEx#0" expanded="false" />
-            <element signature="method#debug#1;class#LoggerEx#0" expanded="false" />
-            <element signature="method#trace#0;class#LoggerEx#0" expanded="false" />
-            <element signature="method#trace#1;class#LoggerEx#0" expanded="false" />
-            <element signature="method#entry#0;class#LoggerEx#0" expanded="false" />
-            <element signature="method#entry#1;class#LoggerEx#0" expanded="false" />
-            <element signature="method#entryMsg#0;class#LoggerEx#0" expanded="false" />
-            <element signature="method#isEllipsisArgument#0;class#LoggerEx#0" expanded="false" />
-            <element signature="method#throwing#0;class#LoggerEx#0" expanded="false" />
-            <element signature="method#throwing#1;class#LoggerEx#0" expanded="false" />
-            <element signature="method#throwingMessage#0;class#LoggerEx#0" expanded="false" />
-            <element signature="method#catching#0;class#LoggerEx#0" expanded="false" />
-            <element signature="method#catching#1;class#LoggerEx#0" expanded="false" />
-            <element signature="method#catchingMessage#0;class#LoggerEx#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="25" column="59" selection-start="582" selection-end="582" vertical-scroll-proportion="0.2989449" vertical-offset="0" max-vertical-offset="2465" />
       </provider>
     </entry>
   </component>
