@@ -22,6 +22,7 @@ public class LoggerAppender extends AppenderSkeleton
         if (( level == null ) || ( loggingEvent.getLevel().isGreaterOrEqual( level ) == true ))
         {
             eventList.add( loggingEvent );
+            fireNewLoggingEvent();
         }
     }
 
@@ -51,14 +52,24 @@ public class LoggerAppender extends AppenderSkeleton
         listenerList.add( LoggerListener.class, loggerListener );
     }
 
-    public static void removeLoggerListener( LoggerListener loggerListener )
-    {
-        listenerList.remove( LoggerListener.class, loggerListener );
-    }
-
     public static LoggerListener[] getLoggerListeners()
     {
         return listenerList.getListeners( LoggerListener.class );
+    }
+
+    private void fireNewLoggingEvent()
+    {
+        LoggerListener[] listeners = getLoggerListeners();
+
+        for ( LoggerListener listener : listeners )
+        {
+            listener.newLoggingEvent();
+        }
+    }
+
+    public static void removeLoggerListener( LoggerListener loggerListener )
+    {
+        listenerList.remove( LoggerListener.class, loggerListener );
     }
 
     public static LoggingEvent get( int index )
