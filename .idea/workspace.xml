@@ -18,6 +18,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -55,7 +56,6 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -69,7 +69,9 @@
         <entry file="file://$PROJECT_DIR$/Utils/src/java/ge/utils/log/LoggerAppender.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="65" column="39" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.53216374" vertical-offset="548" max-vertical-offset="1428">
-              <folding />
+              <folding>
+                <element signature="e#431#445#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -308,7 +310,7 @@
     <option name="ACTIVE_ACTIONS" value="ALPHA_COMPARATOR" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1036" extended-state="0" />
+    <frame x="-8" y="-8" width="1696" height="1036" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -354,14 +356,27 @@
     <entry file="file://$PROJECT_DIR$/Utils/src/java/ge/utils/log/LoggerAppender.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="39" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1428">
-          <folding />
+          <folding>
+            <element signature="e#431#445#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/src/java/ge/utils/log/LoggerAppender.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="39" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1428">
-          <folding />
+          <folding>
+            <element signature="e#431#445#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/src/java/ge/utils/log/LoggerAppender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="39" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.0" vertical-offset="1105" max-vertical-offset="1428">
+          <folding>
+            <element signature="e#431#445#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -428,7 +443,9 @@
     <entry file="file://$PROJECT_DIR$/Utils/src/java/ge/utils/log/LoggerAppender.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="39" selection-start="1570" selection-end="1570" vertical-scroll-proportion="0.53216374" vertical-offset="548" max-vertical-offset="1428">
-          <folding />
+          <folding>
+            <element signature="e#431#445#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
